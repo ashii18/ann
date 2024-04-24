@@ -1,0 +1,18 @@
+from tabulate import tabulate
+x1=[0,0,1,1]
+
+x2=[0,1,0,1]
+
+W1=[1,1,1,1]
+
+w2=[1,1,1,1]
+
+t=2
+
+print("x1   x2   w1   w2   t    S")
+
+for i in range(len(x1)):
+    if(x1[i]*w2[i]+x2[i]*w2[i]>=t):
+        print(x1[i],'  ', x2[i],'  ', W1[i],'  ', w2[i],'  ',t,'  ',0)
+    else:
+        print(x1[i],'  ', x2[i],'  ', W1[i],'  ', w2[i],'  ',t,'  ',1)
